@@ -23,7 +23,7 @@ const initialState: IState = {
 	},
 	navMenu: [
 		{ id: 1, label: 'Мои работы', link: '/works' },
-		{ id: 2, label: 'Источник', link: 'https://github.com/kaenu2/portfolio' },
+		{ id: 2, label: 'Источник', link: 'https://github.com/kaenu2/kaenu2-portfolio' },
 	],
 	stack: [
 		{ id: 1, label: 'HTML5', link: 'https://ru.wikipedia.org/wiki/HTML5' },
