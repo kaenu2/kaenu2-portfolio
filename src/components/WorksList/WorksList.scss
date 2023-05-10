@@ -1,0 +1,26 @@
+.work-list{
+	display: flex;
+	flex-wrap: wrap;
+	gap: 15px;
+	row-gap: 24px;
+	margin-top: 7px;
+	&__item{
+		flex: 0 1 48%;
+		&:hover img{
+			transform: scale(1.02);
+		}
+	}
+	&__link{
+		& img{
+			width: 100%;
+			height: 113px;
+			border-radius: 12px;
+			transition: transform 0.3s ease 0s;
+		}
+		& > h2{
+			text-align: center;
+			font-size: 20px;
+			color: var(--color-main);
+		}
+	}
+}

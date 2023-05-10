@@ -1,0 +1,20 @@
+.btn-link__container{
+	display: flex;
+	justify-content: center;
+	margin: 20px 0 10px;
+}
+.btn-link{
+	color: var(--color2);
+	background-color: var(--bg-color2);
+	line-height: 1.2;
+	font-size: 18px;
+	padding: 7px 14px;
+	border-radius: 10px;
+	transition: filter 200ms ease 0s;
+	&:hover{
+		filter: brightness(.9);
+	}
+	&:active{
+		filter: brightness(.5);
+	}
+}
