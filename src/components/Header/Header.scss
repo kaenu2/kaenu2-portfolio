@@ -17,20 +17,112 @@
 	}
 	&__logo{
 		flex: 0 1 25%;
+		@media (max-width: 700px){
+			flex: 1 1 auto;
+		}
 	}
 	&__nav-menu{
 		flex: 0 1 60%;
+		@media (max-width: 700px){
+			flex: 1 1 auto;
+		}
 		
+	}
+	&__active-panel{
+		@media (max-width: 700px){
+			display: flex;
+			align-items: center;
+			gap: 10px;
+		}
 	}
 	&__theme{
 		flex: 0 1 15%;
 		justify-content: end;
+	}
+	&__icon {
+		display: none;
+	}
+	@media (max-width: 700px){
+		&__icon-bgc{
+			padding: 8px 5px;
+			border: 2px solid #E2E8F0; //
+			border-radius: 5px;
+			width: 40px;
+			height: 40px;
+		}
+		&__icon{
+			margin: 0 auto;
+			display: block;
+			z-index: 5;
+			position: relative;
+			width: 20px;
+			height: 20px;
+			cursor: pointer;
+			& span,
+			&::before,
+			&::after{
+			left: 0;
+			position: absolute;
+			height: 10%;
+			width: 100%;
+			transition: all 0.3s ease 0s;
+			background-color: #9a9d9f;
+			}
+			&::before,
+			&::after{
+			content: '';
+			}
+			
+			&::before{
+			top: 3px;
+			}
+			&::after{
+			bottom: 3px;
+			}
+			& span{
+			top: 50%;
+			transform: scale(1) translate(0px, -50%);
+			}
+			&._active{
+				& span{
+					transform: scale(0);
+				}
+				&::before{
+					top: 50%;
+					transform: rotate(45deg);
+				}
+				&::after{
+					bottom: 40%;
+					transform: rotate(-45deg);
+				}
+			}
+		}
 	}
 }
 .nav-menu{
 	&__list{
 		display: flex;
 		align-items: center;
+		@media (max-width: 700px){
+			position: absolute;
+			top: 100px;
+			right: -20%;
+			flex-direction: column;
+			align-items: start;
+			padding: 8px 0;
+			background-color: var(--bg-color-navMenu);
+			transform: scale(0);
+			transition: all 0.2s ease 0s;
+			z-index: 6;
+			border-radius: 5px;
+			border: 1px solid rgba(255, 255, 255, 0.16);
+			box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 0px 1px,rgba(0, 0, 0, 0.2) 0px 5px 10px,rgba(0, 0, 0, 0.4) 0px 15px 40px;
+			&._active{
+				transform: scale(1);
+				right: 10px;
+				top: 57px;
+			}
+		}
 	}
 	&__item{
 		font-size: 16px;
@@ -42,6 +134,10 @@
 			color: var(--color-main);
 			transition: all 0.3s ease 0s;
 			padding: 5px 4px;
+			@media (max-width: 700px){
+				width: 224px;
+				padding: 6px 12px;
+			}
 			&:hover{
 				text-decoration: underline;
 				text-underline-offset: 3px;
@@ -50,10 +146,17 @@
 				width: 16px;
 				height: 16px;
 				fill: var(--color-main);
+				@media (max-width: 700px){
+					display: none;
+					align-items: start;
+				}
 			}
 		}
 		&:not(:first-child){
 			margin-left: 8px;
+			@media (max-width: 700px){
+				margin-left: 0;
+			}
 		}
 	}
 	&__link{
@@ -61,6 +164,9 @@
 		&._active{
 			background-color: var(--bg-color4);
 			color: #1A202C;
+			@media (max-width: 700px){
+
+			}
 		}
 	}
 }

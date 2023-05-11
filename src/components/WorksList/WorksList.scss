@@ -9,6 +9,10 @@
 		&:hover img{
 			transform: scale(1.02);
 		}
+		@media (max-width: 479.98px){
+			flex: 1 1 auto;
+			
+		}
 	}
 	&__link{
 		& img{
@@ -16,6 +20,9 @@
 			height: 113px;
 			border-radius: 12px;
 			transition: transform 0.3s ease 0s;
+			@media (max-width: 479.98px){
+				height: 230px;
+			}
 		}
 		& > h2{
 			text-align: center;

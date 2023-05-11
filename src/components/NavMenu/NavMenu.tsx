@@ -5,15 +5,16 @@ import { IState, INavMenu } from "../../modules";
 
 interface INavMenuProps {
 	classProps: string,
+	openNavMeny: boolean,
 }
 
-export const NavMenu = ({ classProps }: INavMenuProps) => {
+export const NavMenu = ({ classProps, openNavMeny }: INavMenuProps) => {
 	const navMenuList = useSelector((state: IState): INavMenu[] => state.navMenu);
 
 
 	return (
 		<nav className={`${classProps} nav-menu`}>
-			<ul className="nav-menu__list">
+			<ul className={openNavMeny ? "nav-menu__list _active" : "nav-menu__list"}>
 				{
 					navMenuList.map(elem => {
 						const { id, label, link } = elem;
