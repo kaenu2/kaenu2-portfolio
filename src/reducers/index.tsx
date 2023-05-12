@@ -33,12 +33,12 @@ const initialState: IState = {
 		{ id: 5, label: 'React', link: 'https://react.dev/' },
 		{ id: 6, label: 'React-redux', link: 'https://react-redux.js.org/' },
 		{ id: 7, label: 'TypeScript', link: 'https://www.typescriptlang.org/' },
-		{ id: 8, label: 'Visual Code Studio', link: 'https://code.visualstudio.com/' },
-		{ id: 9, label: 'Figma (адаптивная и кроссбраузерная верстка по макету)', link: 'https://www.figma.com/' },
 		{ id: 10, label: 'Git', link: 'https://git-scm.com/' },
 		{ id: 11, label: 'Webpack', link: 'https://webpack.js.org/' },
 		{ id: 12, label: 'Gulp', link: 'https://gulpjs.com/' },
-		{ id: 13, label: 'Adobe Photoshop', link: 'https://ru.wikipedia.org/wiki/Adobe_Photoshop' }
+		// { id: 9, label: 'Figma (адаптивная и кроссбраузерная верстка по макету)', link: 'https://www.figma.com/' },
+		// { id: 8, label: 'Visual Code Studio', link: 'https://code.visualstudio.com/' },
+		// { id: 13, label: 'Adobe Photoshop', link: 'https://ru.wikipedia.org/wiki/Adobe_Photoshop' }
 	],
 	works: [
 		{
@@ -48,17 +48,17 @@ const initialState: IState = {
 			], desc: 'Адаптивный и кроссбраузерный Инфо-cайт для компании Trustcrypt на тему криптовалюты. Фичи: React-slider, форма которая делает POST запрос на мой free API. Сортировка и пагинация продуктов и новостей, так же есть страницы для товаров и новостей.', source: 'https://github.com/kaenu2/react-trustcrypt', show: true,
 		},
 		{
-			id: 2, title: 'GoCorona', image: 'https://i.ibb.co/gtLhh0K/GoCorona.png', links: 'gocorona', category: 'old', website: 'https://kaenu2.github.io/GoCorona/dist/', year: 2022, stack: 'GULP, SASS, HTML, JS', screens: [
+			id: 2, title: 'GoCorona', image: './img/Products/logo/GoCorona.jpg', links: 'gocorona', category: 'old', website: 'https://kaenu2.github.io/GoCorona/dist/', year: 2022, stack: 'GULP, SASS, HTML, JS', screens: [
 				{ id: 1, image: 'https://i.ibb.co/Dbyd16M/corona.png' },
 			], desc: 'Инфо-сайт, который имеет адаптивную и кросбраузерную верстку.', source: 'https://github.com/kaenu2/GoCorona', show: false,
 		},
 		{
-			id: 3, title: 'Flower Shop', image: 'https://i.ibb.co/x8HKLkz/Flower-Shop.png', links: 'flowershop', category: 'react', website: 'https://kaenu2.github.io/react-flowers-shop/', year: 2023, stack: 'React, SCSS, redux, webpack', screens: [
+			id: 3, title: 'Flower Shop', image: './img/Products/logo/FlowerShop.jpg', links: 'flowershop', category: 'react', website: 'https://kaenu2.github.io/react-flowers-shop/', year: 2023, stack: 'React, SCSS, redux, webpack', screens: [
 				{ id: 1, image: 'https://i.ibb.co/dWJmWvh/fs.png' },
 			], desc: 'Интернет магизн цветов. Фичи добавлять (удалять) в корзину, изменять количество товара в корзине. Есть сортировка, фильтр и поиск по товарам.', source: 'https://github.com/kaenu2/react-flowers-shop', show: true,
 		},
 		{
-			id: 4, title: 'Antools.', image: 'https://i.ibb.co/4Zwg18r/Antools.png', links: 'antools', category: 'old', website: 'https://kaenu2.github.io/Antools/dist/', year: 2022, stack: 'HTML, SASS, JS, GULP ', screens: [
+			id: 4, title: 'Antools.', image: './img/Products/logo/antools.jpg', links: 'antools', category: 'old', website: 'https://kaenu2.github.io/Antools/dist/', year: 2022, stack: 'HTML, SASS, JS, GULP ', screens: [
 				{ id: 1, image: 'https://i.ibb.co/VvNKyLD/antools.png' },
 			], desc: 'Инфо-сайт, который имеет адаптивную и кросбраузерную верстку.', source: 'https://github.com/kaenu2/Antools', show: false,
 		},
@@ -84,7 +84,7 @@ const initialState: IState = {
 			], desc: '', source: 'https://github.com/kaenu2/Timer', show: false,
 		},
 		{
-			id: 9, title: 'Cart', image: 'https://i.ibb.co/h2PdnzZ/cartlogo.png', links: 'cart', category: 'app', website: 'https://kaenu2.github.io/cart/', year: 2023, stack: 'HTML, css, JS', screens: [
+			id: 9, title: 'Cart', image: './img/Products/logo/cart.jpg', links: 'cart', category: 'app', website: 'https://kaenu2.github.io/cart/', year: 2023, stack: 'HTML, css, JS', screens: [
 				{ id: 1, image: 'https://i.ibb.co/QmLg85K/cart1.png' },
 				{ id: 2, image: 'https://i.ibb.co/KDh8FZt/cart2.png' }
 			], desc: '', source: 'https://github.com/kaenu2/cart', show: true,
@@ -95,27 +95,27 @@ const initialState: IState = {
 			], desc: '', source: 'https://github.com/kaenu2/app-twits', show: false,
 		},
 		{
-			id: 12, title: 'Словарь (англ.)', image: 'https://i.ibb.co/Hx8VJWn/voc1.png', links: 'vocabulary', category: 'app', website: 'https://kaenu2.github.io/app-vocabulary/dist/', year: 2023, stack: 'HTML, SASS, JS, Gulp', screens: [
+			id: 12, title: 'Словарь (англ.)', image: './img/Products/logo/vocabulary.jpg', links: 'vocabulary', category: 'app', website: 'https://kaenu2.github.io/app-vocabulary/dist/', year: 2023, stack: 'HTML, SASS, JS, Gulp', screens: [
 				{ id: 1, image: 'https://i.ibb.co/cX5yzNj/voc2.png' }
 			], desc: '', source: 'https://github.com/kaenu2/app-vocabulary', show: false,
 		},
 		{
-			id: 13, title: 'Anow', image: 'https://i.ibb.co/HDSL9nw/anowlogo.png', links: 'anow', category: 'old', website: 'https://kaenu2.github.io/Anow/dist/', year: 2022, stack: 'HTML, SASS, JS, Gulp', screens: [
+			id: 13, title: 'Anow', image: './img/Products/logo/anow.jpg', links: 'anow', category: 'old', website: 'https://kaenu2.github.io/Anow/dist/', year: 2022, stack: 'HTML, SASS, JS, Gulp', screens: [
 				{ id: 1, image: 'https://i.ibb.co/1Rv2WkK/anow1.png' },
 			], desc: 'Инфо-сайт, который имеет адаптивную и кросбраузерную верстку.', source: 'https://github.com/kaenu2/Anow', show: false,
 		},
 		{
-			id: 14, title: 'Relvise', image: 'https://i.ibb.co/TgnPFzN/relviselogo.png', links: 'relvise', category: 'old', website: 'https://kaenu2.github.io/Relvise/dist/', year: 2022, stack: 'HTML, SASS, JS, Gulp', screens: [
+			id: 14, title: 'Relvise', image: './img/Products/logo/Relvise.jpg', links: 'relvise', category: 'old', website: 'https://kaenu2.github.io/Relvise/dist/', year: 2022, stack: 'HTML, SASS, JS, Gulp', screens: [
 				{ id: 1, image: 'https://i.ibb.co/ZxqPbkB/relvise1.png' },
 			], desc: 'Инфо-сайт, который имеет адаптивную и кросбраузерную верстку.', source: 'https://github.com/kaenu2/Relvise', show: false,
 		},
 		{
-			id: 15, title: 'MOVEON', image: 'https://i.ibb.co/LNpz2dD/moveonlogo.png', links: 'moveon', category: 'old', website: 'https://kaenu2.github.io/Moveon/dist/', year: 2022, stack: 'HTML, SASS, JS, Gulp', screens: [
+			id: 15, title: 'MOVEON', image: './img/Products/logo/moveon.jpg', links: 'moveon', category: 'old', website: 'https://kaenu2.github.io/Moveon/dist/', year: 2022, stack: 'HTML, SASS, JS, Gulp', screens: [
 				{ id: 1, image: 'https://i.ibb.co/3YcnF8T/moveon1.png' },
 			], desc: 'Инфо-сайт, который имеет адаптивную и кросбраузерную верстку.', source: 'https://github.com/kaenu2/Moveon', show: false,
 		},
 		{
-			id: 16, title: 'Погода', image: 'https://i.ibb.co/TYNy0Qw/weat1.png', links: 'weather', category: 'app', website: 'https://kaenu2.github.io/app-weather/dist/', year: 2023, stack: 'HTML, SASS, JS, gulp', screens: [
+			id: 16, title: 'Погода', image: './img/Products/logo/weather.jpg', links: 'weather', category: 'app', website: 'https://kaenu2.github.io/app-weather/dist/', year: 2023, stack: 'HTML, SASS, JS, gulp', screens: [
 				{ id: 2, image: 'https://i.ibb.co/whfVFfr/weat2.png' }
 			], desc: '', source: 'https://github.com/kaenu2/app-weather', show: false,
 		},

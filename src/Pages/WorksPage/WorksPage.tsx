@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 import "./WorksPage.scss";
 import { OldWorks } from "./components/OldWorks/OldWorks";
@@ -7,17 +8,14 @@ import { AppWorks } from "./components/AppWorks/AppWorks";
 
 export const WorksPage = () => {
 	return (
-		<>
-			<section className="promo-img">
-				<div className="promo-img__container _container">
-					<div className="promo-img__img">
-						<img src="https://i.ibb.co/4FVM4br/coder.png" alt="coder" />
-					</div>
-				</div>
-			</section>
+		<motion.main
+			initial={{ opacity: 0 }}
+			animate={{ opacity: 1, transition: { duration: .3 } }}
+			exit={{ opacity: 0, transition: { duration: .3 } }}
+			className="page">
 			<ReactWorks />
 			<AppWorks />
 			<OldWorks />
-		</>
+		</motion.main>
 	)
 }
