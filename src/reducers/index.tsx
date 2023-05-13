@@ -20,6 +20,7 @@ const initialState: IState = {
 		links: [
 			{ id: 1, label: '@kaenu2', link: 'https://github.com/kaenu2', soc: 'github' },
 			{ id: 2, label: '@kaenu2', link: 'https://t.me/kaenu2', soc: 'tg' },
+			{ id: 2, label: '@kaenu2', link: 'https://vk.com/kaenu2', soc: 'vk' },
 		]
 	},
 	navMenu: [
