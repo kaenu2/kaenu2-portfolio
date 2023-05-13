@@ -46,7 +46,7 @@ const initialState: IState = {
 			id: 1, title: 'Trustcrypt', image: 'https://i.ibb.co/XpwM8GF/2.png', links: 'trustcrypt', category: 'react', website: 'https://kaenu2.github.io/react-trustcrypt/', year: 2023, stack: 'React, React-redux, React-router, SCSS, TypeScript, webpack', screens: [
 				{ id: 1, image: 'https://i.ibb.co/Q6Dyyhf/1.jpg' },
 				{ id: 2, image: 'https://i.ibb.co/tZjvtCq/2.jpg' }
-			], desc: 'Адаптивный и кроссбраузерный Инфо-cайт для компании Trustcrypt на тему криптовалюты. Фичи: React-slider, форма которая делает POST запрос на мой free API. Сортировка и пагинация продуктов и новостей, так же есть страницы для товаров и новостей.', source: 'https://github.com/kaenu2/react-trustcrypt', show: true,
+			], desc: 'Адаптивный и кроссбраузерный Инфо-cайт для компании Trustcrypt на тему криптовалюты. Фичи: React-slider, форма которая делает POST запрос на мой free API. Сортировка, пагинация продуктов и новостей.', source: 'https://github.com/kaenu2/react-trustcrypt', show: true,
 		},
 		{
 			id: 2, title: 'GoCorona', image: './img/Products/logo/GoCorona.jpg', links: 'gocorona', category: 'old', website: 'https://kaenu2.github.io/GoCorona/dist/', year: 2022, stack: 'GULP, SASS, HTML, JS', screens: [
@@ -66,34 +66,34 @@ const initialState: IState = {
 		{
 			id: 5, title: 'ToDo', image: 'https://i.ibb.co/VH6yxjX/Todo.png', links: 'todo', category: 'app', website: 'https://kaenu2.github.io/todo-app/', year: 2023, stack: 'React, SASS, React-redux, webpack ', screens: [
 				{ id: 1, image: 'https://i.ibb.co/VH6yxjX/Todo.png' },
-			], desc: 'Это ToDo приложение которое может добавлять быструю задачу или с датой, а так же удалять, изменять, добавлять в избранные, выполненные или лайкнуть. Есть сортировка по задачам и их дате + поиск. ', source: 'https://github.com/kaenu2/todo-app', show: true,
+			], desc: 'Это ToDo приложение которое может добавлять быструю задачу или задачу с датой, а так же удалять, изменять, добавлять в избранные, выполненные или лайкнуть. Есть сортировка по задачам и их дате + поиск. ', source: 'https://github.com/kaenu2/todo-app', show: true,
 		},
 		{
 			id: 6, title: 'Конвертер валют', image: 'https://i.ibb.co/xzHdyJ8/convert.png', links: 'converter', category: 'app', website: 'https://kaenu2.github.io/Converter/', year: 2023, stack: 'HTML, css, JS', screens: [
 				{ id: 1, image: 'https://i.ibb.co/xzHdyJ8/convert.png' },
-			], desc: '', source: 'https://github.com/kaenu2/Converter', show: false,
+			], desc: 'Конвертер валют. Конвертирует Русский рубль, Доллар США, Евро, Казахстанский тенге', source: 'https://github.com/kaenu2/Converter', show: false,
 		},
 		{
 			id: 7, title: 'Секундомер', image: 'https://i.ibb.co/2Y90nDj/sec2.png', links: 'stopwatch', category: 'app', website: 'https://kaenu2.github.io/stopwatch/', year: 2023, stack: 'HTML, css, JS', screens: [
 				{ id: 1, image: 'https://i.ibb.co/2KY43pS/sec1.png' },
 				{ id: 2, image: 'https://i.ibb.co/2Y90nDj/sec2.png' }
-			], desc: '', source: 'https://github.com/kaenu2/stopwatch', show: false,
+			], desc: 'Это небольшое, аккуратное и простое в использовании приложение, которое предназначено для измерения времени в разных ситуациях: спорт, готовка, игры, обучение и так далее', source: 'https://github.com/kaenu2/stopwatch', show: false,
 		},
 		{
 			id: 8, title: 'Таймер', image: 'https://i.ibb.co/TbYH6RM/timer.png', links: 'timer', category: 'app', website: 'https://kaenu2.github.io/Timer/', year: 2023, stack: 'HTML, css, JS', screens: [
 				{ id: 1, image: 'https://i.ibb.co/TbYH6RM/timer.png' },
-			], desc: '', source: 'https://github.com/kaenu2/Timer', show: false,
+			], desc: 'Таймер обратного отсчета помогает отслеживать оставшееся время до наступления важных моментов в вашей жизни. Идеально подходит для дней рождения, свадеб и других предстоящих, особенных событий.', source: 'https://github.com/kaenu2/Timer', show: false,
 		},
 		{
 			id: 9, title: 'Cart', image: './img/Products/logo/cart.jpg', links: 'cart', category: 'app', website: 'https://kaenu2.github.io/cart/', year: 2023, stack: 'HTML, css, JS', screens: [
 				{ id: 1, image: 'https://i.ibb.co/QmLg85K/cart1.png' },
 				{ id: 2, image: 'https://i.ibb.co/KDh8FZt/cart2.png' }
-			], desc: '', source: 'https://github.com/kaenu2/cart', show: true,
+			], desc: 'Приложение Cart - добавляет товары в корзину, увеличивают или уменьшает количество товара в корзине. На 2 старнице мы можем заплнить форму с данными которая отправит POST запрос с данными пользователя. ', source: 'https://github.com/kaenu2/cart', show: true,
 		},
 		{
 			id: 11, title: 'Twits', image: 'https://i.ibb.co/vL82Tm2/twits.png', links: 'twits', category: 'app', website: 'https://kaenu2.github.io/app-twits/', year: 2023, stack: 'React, SASS', screens: [
 				{ id: 1, image: 'https://i.ibb.co/vL82Tm2/twits.png' },
-			], desc: '', source: 'https://github.com/kaenu2/app-twits', show: false,
+			], desc: 'Добавляем твит, который можно лайкнуть, удалить, добавить в избранные. Сортировка твитсов.', source: 'https://github.com/kaenu2/app-twits', show: false,
 		},
 		{
 			id: 12, title: 'Словарь (англ.)', image: './img/Products/logo/vocabulary.jpg', links: 'vocabulary', category: 'app', website: 'https://kaenu2.github.io/app-vocabulary/dist/', year: 2023, stack: 'HTML, SASS, JS, Gulp', screens: [
