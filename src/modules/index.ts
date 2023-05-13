@@ -24,7 +24,7 @@ export interface IUserInfo {
 	userSurnameRU: string,
 	photoProfile: string,
 	logo: string,
-	target: string,
+	aboutme: string,
 	bio: IBio[],
 	like: ILike[],
 	links: ILinks[],

@@ -2,7 +2,7 @@ import { IAction, IState } from "../modules";
 
 const initialState: IState = {
 	userInfo: {
-		userFirstNameEU: 'Andrey', userSurnameEU: 'Kurnosov', userFirstNameRU: 'Андрей', userSurnameRU: 'Курносов', photoProfile: 'https://i.ibb.co/gWRgnLD/myPhoto2.jpg', logo: '', target: 'развить технические скилы.',
+		userFirstNameEU: 'Andrey', userSurnameEU: 'Kurnosov', userFirstNameRU: 'Андрей', userSurnameRU: 'Курносов', photoProfile: 'https://i.ibb.co/gWRgnLD/myPhoto2.jpg', logo: '', aboutme: 'внимательный, пунктуальный, трудолюбивый, коммуникабельный.',
 		bio: [
 			{ id: 1, year: 2001, info: 'Родился в Чувашеской Республике г. Алатырь.' },
 			{ id: 2, year: 2016, info: 'Закончил муниципальное бюджетное общеобразовательное учреждение / "Средняя общеобразовательная школа № 2" / города Алатырь Чувашеской Республике.' },

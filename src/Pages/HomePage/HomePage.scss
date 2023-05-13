@@ -11,6 +11,7 @@
 	}
 	&__about{
 		display: flex;
+		gap: 5px;
 		justify-content: space-between;
 		& > img{
 			width: 96px;
