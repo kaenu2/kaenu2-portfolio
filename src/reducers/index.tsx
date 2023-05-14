@@ -20,7 +20,7 @@ const initialState: IState = {
 		links: [
 			{ id: 1, label: '@kaenu2', link: 'https://github.com/kaenu2', soc: 'github' },
 			{ id: 2, label: '@kaenu2', link: 'https://t.me/kaenu2', soc: 'tg' },
-			{ id: 2, label: '@kaenu2', link: 'https://vk.com/kaenu2', soc: 'vk' },
+			{ id: 3, label: '@kaenu2', link: 'https://vk.com/kaenu2', soc: 'vk' },
 		]
 	},
 	navMenu: [
@@ -122,7 +122,7 @@ const initialState: IState = {
 			], desc: '', source: 'https://github.com/kaenu2/app-weather', show: false,
 		},
 		{
-			id: 16, title: 'Github Search Users', image: './img/Products/logo/gsu.jpg', links: 'GithubSearchUsers', category: 'app', website: 'https://kaenu2.github.io/github-search/', year: 2023, stack: 'React, SASS, React-redux, webpack, React-router', screens: [
+			id: 17, title: 'Github Search Users', image: './img/Products/logo/gsu.jpg', links: 'GithubSearchUsers', category: 'app', website: 'https://kaenu2.github.io/github-search/', year: 2023, stack: 'React, SASS, React-redux, webpack, React-router', screens: [
 				{ id: 1, image: 'https://i.ibb.co/XFNzd8m/gsu.png' },
 				{ id: 2, image: 'https://i.ibb.co/rxRCQ4f/gsu2.png' }
 			], desc: '', source: 'https://github.com/kaenu2/app-weather', show: false,
