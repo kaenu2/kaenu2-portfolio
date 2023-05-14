@@ -3,7 +3,7 @@ import { IAction, IState } from "../modules";
 const initialState: IState = {
 	userInfo: {
 		userFirstNameEU: 'Andrey', userSurnameEU: 'Kurnosov', userFirstNameRU: 'Андрей', userSurnameRU: 'Курносов',
-		photoProfile: './img/PhotoUser/1.jpg', logo: '', aboutme: 'внимательный, пунктуальный, трудолюбивый, коммуникабельный.',
+		photoProfile: './img/PhotoUser/9.jpg', logo: '', aboutme: 'внимательный, пунктуальный, трудолюбивый, коммуникабельный.',
 		bio: [
 			{ id: 1, year: 2001, info: 'Родился в Чувашеской Республике г. Алатырь.' },
 			{ id: 2, year: 2016, info: 'Закончил муниципальное бюджетное общеобразовательное учреждение / "Средняя общеобразовательная школа № 2" / города Алатырь Чувашеской Республике.' },
@@ -119,6 +119,12 @@ const initialState: IState = {
 		{
 			id: 16, title: 'Погода', image: './img/Products/logo/weather.jpg', links: 'weather', category: 'app', website: 'https://kaenu2.github.io/app-weather/dist/', year: 2023, stack: 'HTML, SASS, JS, gulp', screens: [
 				{ id: 2, image: 'https://i.ibb.co/whfVFfr/weat2.png' }
+			], desc: '', source: 'https://github.com/kaenu2/app-weather', show: false,
+		},
+		{
+			id: 16, title: 'Github Search Users', image: './img/Products/logo/gsu.jpg', links: 'GithubSearchUsers', category: 'app', website: 'https://kaenu2.github.io/github-search/', year: 2023, stack: 'React, SASS, React-redux, webpack, React-router', screens: [
+				{ id: 1, image: 'https://i.ibb.co/XFNzd8m/gsu.png' },
+				{ id: 2, image: 'https://i.ibb.co/rxRCQ4f/gsu2.png' }
 			], desc: '', source: 'https://github.com/kaenu2/app-weather', show: false,
 		},
 	],
