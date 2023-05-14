@@ -125,7 +125,15 @@ const initialState: IState = {
 			id: 17, title: 'Github Search Users', image: './img/Products/logo/gsu.jpg', links: 'GithubSearchUsers', category: 'app', website: 'https://kaenu2.github.io/github-search/', year: 2023, stack: 'React, SASS, React-redux, webpack, React-router', screens: [
 				{ id: 1, image: 'https://i.ibb.co/XFNzd8m/gsu.png' },
 				{ id: 2, image: 'https://i.ibb.co/rxRCQ4f/gsu2.png' }
-			], desc: '', source: 'https://github.com/kaenu2/app-weather', show: false,
+			], desc: '', source: 'https://github.com/kaenu2/github-search', show: false,
+		},
+		{
+			id: 18, title: 'Партфолио', image: './img/Products/logo/port.jpg', links: 'partfolio', category: 'react', website: 'https://kaenu2.vercel.app/', year: 2023, stack: 'React, SASS, React-redux, webpack, React-router', screens: [
+				{ id: 1, image: 'https://i.ibb.co/C7Qgx6c/port.png' },
+				{ id: 2, image: 'https://i.ibb.co/wK5rMBG/port2.png' },
+				{ id: 3, image: 'https://i.ibb.co/RHYsGJk/port3.png' },
+				{ id: 4, image: 'https://i.ibb.co/j3Btr2J/port4.png' }
+			], desc: '', source: 'https://github.com/kaenu2/kaenu2-portfolio', show: false,
 		},
 	],
 	footerInfo: {

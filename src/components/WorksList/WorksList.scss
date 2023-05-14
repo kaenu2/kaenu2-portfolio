@@ -20,6 +20,7 @@
 			height: 113px;
 			border-radius: 12px;
 			transition: transform 0.3s ease 0s;
+			border: 1px solid var(--border-color-work-img);
 			@media (max-width: 479.98px){
 				height: 230px;
 			}
